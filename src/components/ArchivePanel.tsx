@@ -89,7 +89,7 @@ const ArchivePanel = () => {
             </Button>
             <Button variant="default" className="flex-1">
               <Play className="mr-2 h-4 w-4" />
-              Ręczna archiwizacja
+              Archiwizuj
             </Button>
           </div>
         </div>
