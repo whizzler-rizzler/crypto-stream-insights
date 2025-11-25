@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Activity, Database, BarChart3, Bell, Building2, Coins } from "lucide-react";
+import { Activity, Database, Building2, Coins } from "lucide-react";
 import Header from "@/components/Header";
 import StatsCard from "@/components/StatsCard";
 import ConfigurationPanel from "@/components/ConfigurationPanel";
@@ -8,6 +8,7 @@ import DebugPanel from "@/components/DebugPanel";
 import ExportPanel from "@/components/ExportPanel";
 import ArchivePanel from "@/components/ArchivePanel";
 import SystemHealthPanel from "@/components/SystemHealthPanel";
+import DatabasePanel from "@/components/DatabasePanel";
 
 const Index = () => {
   return (
@@ -19,10 +20,9 @@ const Index = () => {
         <ConfigurationPanel />
 
         {/* Main Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <StatsCard title="Otrzymane" value="0" icon={Activity} iconColor="text-blue-500" />
           <StatsCard title="Zapisane OHLCV" value="0" icon={Database} iconColor="text-violet-500" />
-          <StatsCard title="Alerty" value="0" icon={Bell} iconColor="text-amber-500" />
           <StatsCard title="Giełdy" value="0" icon={Building2} iconColor="text-emerald-500" />
           <StatsCard title="Symbole" value="0" icon={Coins} iconColor="text-cyan-500" />
         </div>
@@ -54,9 +54,7 @@ const Index = () => {
             </TabsContent>
 
             <TabsContent value="database">
-              <div className="text-center py-12 text-muted-foreground">
-                Widok bazy danych - w przygotowaniu
-              </div>
+              <DatabasePanel />
             </TabsContent>
 
             <TabsContent value="export">
