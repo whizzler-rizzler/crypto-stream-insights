@@ -12,13 +12,13 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Professional dark mode - main colors */
-    --background: 222 47% 8%;
+    --background: 222 47% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 217 32% 12%;
+    --card: 217 32% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 217 32% 14%;
+    --popover: 217 32% 10%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 213 94% 68%;
@@ -36,8 +36,8 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 32% 20%;
-    --input: 217 32% 20%;
+    --border: 217 32% 15%;
+    --input: 217 32% 15%;
     --ring: 213 94% 68%;
 
     --radius: 0.5rem;
