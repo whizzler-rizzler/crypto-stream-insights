@@ -1,4 +1,4 @@
-import { Archive, Clock, AlertCircle, CheckCircle, Folder } from "lucide-react";
+import { Archive, Clock, AlertCircle, CheckCircle, Folder, Play, Database } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +22,28 @@ const ArchivePanel = () => {
             <li>• Zachowuje ostatnie <span className="font-semibold text-foreground">3 dni</span> w bazie</li>
             <li>• Starsze dane archiwizuje w pliku <code className="text-primary">archive_*</code> w folderze <code className="text-primary">archives/</code></li>
           </ul>
+        </div>
+
+        {/* Database Stats */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <Database className="h-5 w-5 text-cyan-500" />
+            <h4 className="font-semibold text-foreground">Stan bazy danych</h4>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="p-4 rounded-lg bg-background/50 border border-border/40">
+              <p className="text-xs text-muted-foreground mb-1">Liczba rekordów</p>
+              <p className="text-2xl font-bold text-foreground">124,567</p>
+              <p className="text-xs text-muted-foreground mt-1">ostatnie 3 dni</p>
+            </div>
+
+            <div className="p-4 rounded-lg bg-background/50 border border-border/40">
+              <p className="text-xs text-muted-foreground mb-1">Waga bazy danych</p>
+              <p className="text-2xl font-bold text-foreground">2.4 GB</p>
+              <p className="text-xs text-muted-foreground mt-1">łączna wielkość</p>
+            </div>
+          </div>
         </div>
 
         {/* Scheduler Status */}
@@ -64,6 +86,10 @@ const ArchivePanel = () => {
             <Button variant="outline" className="flex-1 border-border/60">
               <AlertCircle className="mr-2 h-4 w-4" />
               Wyłącz scheduler
+            </Button>
+            <Button variant="default" className="flex-1">
+              <Play className="mr-2 h-4 w-4" />
+              Ręczna archiwizacja
             </Button>
           </div>
         </div>
