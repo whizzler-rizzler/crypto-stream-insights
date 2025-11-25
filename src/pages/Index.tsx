@@ -29,7 +29,7 @@ const Index = () => {
 
         {/* Tabs Section */}
         <Tabs defaultValue="streaming" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 bg-card/50 backdrop-blur-sm border border-border/40">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 bg-card/50 backdrop-blur-sm border border-border/40">
             <TabsTrigger value="streaming" className="data-[state=active]:bg-primary/10">
               <Activity className="h-4 w-4 mr-2" />
               Streaming
@@ -37,14 +37,6 @@ const Index = () => {
             <TabsTrigger value="database" className="data-[state=active]:bg-primary/10">
               <Database className="h-4 w-4 mr-2" />
               Baza danych
-            </TabsTrigger>
-            <TabsTrigger value="charts" className="data-[state=active]:bg-primary/10">
-              <BarChart3 className="h-4 w-4 mr-2" />
-              Wykresy
-            </TabsTrigger>
-            <TabsTrigger value="alerts" className="data-[state=active]:bg-primary/10">
-              <Bell className="h-4 w-4 mr-2" />
-              Alerty
             </TabsTrigger>
             <TabsTrigger value="export" className="data-[state=active]:bg-primary/10">
               📤 Eksport
@@ -64,18 +56,6 @@ const Index = () => {
             <TabsContent value="database">
               <div className="text-center py-12 text-muted-foreground">
                 Widok bazy danych - w przygotowaniu
-              </div>
-            </TabsContent>
-
-            <TabsContent value="charts">
-              <div className="text-center py-12 text-muted-foreground">
-                Wykresy - w przygotowaniu
-              </div>
-            </TabsContent>
-
-            <TabsContent value="alerts">
-              <div className="text-center py-12 text-muted-foreground">
-                System alertów - w przygotowaniu
               </div>
             </TabsContent>
 
