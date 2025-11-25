@@ -20,11 +20,11 @@ const Index = () => {
 
         {/* Main Stats */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          <StatsCard title="📨 Otrzymane" value="0" icon={Activity} iconColor="text-blue-500" />
-          <StatsCard title="💾 Zapisane OHLCV" value="0" icon={Database} iconColor="text-violet-500" />
-          <StatsCard title="🔔 Alerty" value="0" icon={Bell} iconColor="text-amber-500" />
-          <StatsCard title="🏛️ Giełdy" value="0" icon={Building2} iconColor="text-emerald-500" />
-          <StatsCard title="💱 Symbole" value="0" icon={Coins} iconColor="text-cyan-500" />
+          <StatsCard title="Otrzymane" value="0" icon={Activity} iconColor="text-blue-500" />
+          <StatsCard title="Zapisane OHLCV" value="0" icon={Database} iconColor="text-violet-500" />
+          <StatsCard title="Alerty" value="0" icon={Bell} iconColor="text-amber-500" />
+          <StatsCard title="Giełdy" value="0" icon={Building2} iconColor="text-emerald-500" />
+          <StatsCard title="Symbole" value="0" icon={Coins} iconColor="text-cyan-500" />
         </div>
 
         {/* Tabs Section */}
