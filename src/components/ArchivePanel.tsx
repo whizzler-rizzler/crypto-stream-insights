@@ -96,6 +96,39 @@ const ArchivePanel = () => {
             </div>
           </div>
         </div>
+
+        {/* Archive Logs */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <AlertCircle className="h-5 w-5 text-primary" />
+            <h4 className="font-semibold text-foreground">Logi archiwizacji</h4>
+          </div>
+          
+          <div className="p-4 rounded-lg bg-background/50 border border-border/40 max-h-64 overflow-y-auto">
+            <div className="space-y-2 font-mono text-xs">
+              <div className="flex gap-3 text-muted-foreground">
+                <span className="text-emerald-500">✓</span>
+                <span className="text-muted-foreground/60">2025-11-24 00:00:15</span>
+                <span>Archiwizacja zakończona: 1,234 rekordów przeniesiono do archive_20251124.csv</span>
+              </div>
+              <div className="flex gap-3 text-muted-foreground">
+                <span className="text-emerald-500">✓</span>
+                <span className="text-muted-foreground/60">2025-11-23 00:00:12</span>
+                <span>Archiwizacja zakończona: 2,156 rekordów przeniesiono do archive_20251123.csv</span>
+              </div>
+              <div className="flex gap-3 text-muted-foreground">
+                <span className="text-emerald-500">✓</span>
+                <span className="text-muted-foreground/60">2025-11-22 00:00:18</span>
+                <span>Archiwizacja zakończona: 1,987 rekordów przeniesiono do archive_20251122.csv</span>
+              </div>
+              <div className="flex gap-3 text-muted-foreground">
+                <span className="text-primary">ℹ</span>
+                <span className="text-muted-foreground/60">2025-11-21 00:00:10</span>
+                <span>Brak danych do archiwizacji</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Card>
   );

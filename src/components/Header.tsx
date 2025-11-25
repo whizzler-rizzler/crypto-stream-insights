@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BarChart3, Play, Square } from "lucide-react";
+import { BarChart3, Play, Square, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
@@ -73,6 +73,15 @@ const Header = () => {
                   Start
                 </>
               )}
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-border/60"
+            >
+              <Database className="mr-2 h-5 w-5" />
+              Pobierz bazę
             </Button>
           </div>
         </div>
